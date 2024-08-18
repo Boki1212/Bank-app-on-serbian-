@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novčana Štedionica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Novčana Štedionica</h1>
+            <p>Vaše jedinstveno rešenje za upravljanje računima, depozitima, kreditima i karticama.</p>
+        </header>
+
+        <!-- Otvaranje računa -->
+        <section id="accountSection">
+            <h2>Kreiraj Novi Račun</h2>
+            <input type="text" id="accountName" placeholder="Ime Računa">
+            <button id="createAccount">Kreiraj Račun</button>
+            <p id="accountMessage" class="message"></p>
+        </section>
+
+        <!-- Upravljanje depozitima -->
+        <section id="depositSection">
+            <h2>Uplati Depozit</h2>
+            <input type="number" id="depositAmount" placeholder="Iznos Depozita">
+            <button id="depositMoney">Uplati</button>
+            <p id="balanceMessage" class="message"></p>
+        </section>
+
+        <!-- Podizanje kredita -->
+        <section id="loanSection">
+            <h2>Zatraži Kredit</h2>
+            <input type="number" id="loanAmount" placeholder="Iznos Kredita">
+            <input type="text" id="collateral" placeholder="Hipoteka">
+            <button id="applyLoan">Zatraži Kredit</button>
+            <p id="loanMessage" class="message"></p>
+        </section>
+
+        <!-- Kalkulator mesečnih rata -->
+        <section id="loanCalculatorSection">
+            <h2>Kalkulator Kredita</h2>
+            <input type="number" id="loanCalculatorAmount" placeholder="Iznos Kredita">
+            <input type="number" id="interestRate" placeholder="Kamata (%)">
+            <input type="number" id="loanTerm" placeholder="Period Kredita (godine)">
+            <button id="calculateLoan">Izračunaj Ratu</button>
+            <p id="loanCalculatorMessage" class="message"></p>
+        </section>
+
+        <!-- Izdavanje kartica -->
+        <section id="cardSection">
+            <h2>Izdavanje Kartica</h2>
+            <input type="text" id="cardType" placeholder="Tip Kartice (Debitna/Kreditna)">
+            <button id="issueCard">Izdaj Karticu</button>
+            <p id="cardMessage" class="message"></p>
+        </section>
+
+        <!-- Pregled i upravljanje računima -->
+        <section id="accountsOverview">
+            <h2>Vaši Računi</h2>
+            <ul id="accountsList"></ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Novčana Štedionica. Sva prava zadržana.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
